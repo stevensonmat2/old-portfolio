@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="portfolio_style_sheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js>"</script>
+    <script>
+$(document).on('click', '.button', function(event){
+   event.preventDefault();
+
+   $('html, body').animate({
+       scrollTop: $( $.attr(this, 'href') ).offset().top
+   }, 800);
+});
+
+(function(){
+
+  var parallax = document.querySelectorAll("body"),
+      speed = 0.5;
+
+  window.onscroll = function(){
+    [].slice.call(parallax).forEach(function(el,i){
+
+      var windowYOffset = window.pageYOffset,
+          elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
+
+      el.style.backgroundPosition = elBackgrounPos;
+
+    });
+  };
+
+})();
+
+
+$(document).ready( function() {
+	resize()
+});
+
+$( window ).resize(function() {
+  resize()
+});
+
+function resize() {
+	var divH = $(window).innerHeight();
+    $(".mydiv").height( divH );
+};
+
+
+    </script>
+</head>
+<body>
+<header>
+  <h1>MATT STEVENSON</h1>
+
+  <a class='button other' href="#intro">welcome</a>
+
+  </header>
+  <div id="intro" class='mydiv'>
+    <font id="serifada2">hello. my name is matt stevenson. i'm a programmer, musician, and artist. simplicty and expression are the core elements that inform my work.</font>
+
+    <div><a class='button' href="#contact">contact</a><a id='biog' class='button' href="#bio">bio</a>
+    <a id='proj' class='button' href="#projects">projects</a></div>
+
+
+    </div>
+   <div id="bio" class='mydiv'>
+     <font id="serifada2">about me</font>
+     <div><a class='button' href="#intro">welcome</a>
+    <a class='button' href="#projects">projects</a>
+       <a class='button' href="#contact">contact</a>
+       </div>
+     </div>
+
+  <div id="projects" class='mydiv'>
+    <font id="serifada2">projects</font>
+    <div><a class='button' href="#intro">welcome</a><a class='button' href="#contact">contact</a>
+    <a class='button' href="#bio">bio</a></div>
+    </div>
+    <div id="contact" class='mydiv'>
+    <font id="serifada2">contact</font>
+    <div><a class='button' href="#intro">welcome</a><a class='button' href="#projects">projects</a>
+    <a class='button' href="#bio">bio</a>
+
+    </div>
+    </div>
+
+</body>
+</html>
