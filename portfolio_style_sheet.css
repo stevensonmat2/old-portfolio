@@ -113,3 +113,23 @@ bottom: 0px;
     font-size: .9em;
   }
 }
+
+
+
+#arrowR{
+background:yellow;
+    width:20px;
+    height:50px;
+    float:right;
+    cursor:pointer;
+    align-self: center;
+}
+
+
+#arrowL{
+background:yellow;
+    width:20px;
+    height:50px;
+    float:left;
+    cursor:pointer;
+}
