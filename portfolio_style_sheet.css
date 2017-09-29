@@ -11,7 +11,7 @@ header {
     position: relative;
 /*     clear: both; */
     overflow: hidden;
-/*     height: 100vh; */
+    height: 100vh;
   justify-content: center;
   align-items: center;
   background-position: center;
