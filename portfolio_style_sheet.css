@@ -101,7 +101,7 @@ bottom: 0px;
   }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 1200px) {
 
   .button {
     bottom: 35px;
