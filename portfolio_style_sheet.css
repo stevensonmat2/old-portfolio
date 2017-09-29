@@ -97,7 +97,7 @@ bottom: 0px;
 @media all and (max-width: 480px) {
 
   .button {
-    font-size: .7em;
+    font-size: .8em;
   }
 }
 @media all and (min-width: 650px) {
