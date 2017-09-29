@@ -101,12 +101,12 @@ bottom: 0px;
   }
 }
 
-@media all and (max-width: 1200px) {
+/*@media all and (max-width: 1200px) {*/
 
-  .button {
-    bottom: 100px;
-  }
-}
+  /*.button {*/
+    /*bottom: 100px;*/
+  /*}*/
+/*}*/
 @media all and (min-width: 650px) {
 
   .button {
