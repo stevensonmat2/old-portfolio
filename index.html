@@ -38,10 +38,11 @@ $(document).on('click', '.button', function(event){
 
 
 $(document).ready( function() {
-	resize()
+	resize();
+    $("html, body").animate({ scrollTop: 10 }, 100);
 });
 
-$( window ).resize(function() {
+$(window).resize(function() {
   resize()
 });
 
