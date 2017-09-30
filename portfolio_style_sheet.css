@@ -4,6 +4,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
+    overflow: auto;
 }
 header {
     display: flex;
@@ -86,6 +87,7 @@ bottom: 0px;
   transform: translatex(-50%);
 }
 
+
 .button:hover {
     cursor: pointer;
     background: rgba(255,255,255,.8);
@@ -93,7 +95,33 @@ bottom: 0px;
     color: #000;
     outline: 1px solid #999;
 }
-
+.up {
+    text-decoration: none;
+    font-size: 1.5em;
+    /*background: rgba(0, 0, 0, 0.43);*/
+    color: #fff;
+    height: 2.9em;
+    /*line-height: 4em;*/
+    border-radius: 1px;
+    padding: .3em .5em .3em .5em;
+  text-align: center;
+    text-transform: uppercase;
+    opacity: 0;
+    /*position: absolute;*/
+    top: 10px;
+    height: 1em;
+    left: 50%;
+  transform: translatex(-50%);
+    transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.up:hover {
+     cursor: pointer;
+    background: rgba(255,255,255,.8);
+  opacity: 0.5;
+    color: #000;
+    outline: 1px solid #999;
+}
 @media all and (max-width: 580px) {
 
   .button {
@@ -112,24 +140,4 @@ bottom: 0px;
   .button {
     font-size: .9em;
   }
-}
-
-
-
-#arrowR{
-background:yellow;
-    width:20px;
-    height:50px;
-    float:right;
-    cursor:pointer;
-    align-self: center;
-}
-
-
-#arrowL{
-background:yellow;
-    width:20px;
-    height:50px;
-    float:left;
-    cursor:pointer;
 }
